@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-    - 4306:3306
+    - 3306:3306
     volumes:
     - work-volume:/var/lib/mysql
     -  ./docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
